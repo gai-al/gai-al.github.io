@@ -1,1 +1,135 @@
+<!DOCTYPE HTML>
+<html >
+<!--<html >-->
+<head>
+    <meta charset="utf-8">
+    <title>Overview</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+
+<div class="promo-wrap">
+						<div class="promo caption-wrap">
+						<div class="caption">
+							<div class="cap-ds description" style='color: #1e1e1e;'>Попробуй свои силы в создании собственного стартапа</div>
+							<div class="cap-ttl" style='color: #ff501f;'>WEB-TYCOON</div>
+							<div class="cap-ds" ><a role="button" style='border: 2px solid #2c7344;color: #2c7344;' href="https://game.web-tycoon.com/?invite=2UTM?utm_source=konkurs&utm_medium=starova;utm_campaign=lending5">Играть</a></div>
+						</div>
+					</div>
+					<div class="mouse-wrap">
+						<a href="#" class="mouse-scroll"></a>
+					</div>
+					<div class="parallax-wrap"></div>
+					<div class="second-parallax-wrap"></div>
+					<div class="third-parallax-wrap"></div>
+					<div class="fourth-parallax-wrap"></div>
+<script>
+
+    function moveIcons(){
+        $(".promo-wrap, header").on('mousemove', function(e){
+            var deltaX = e.clientX / (window.innerWidth / 2),deltaY = e.clientY / (window.innerHeight / 2),k = 5,n=8,j=12;
+            $('.parallax-wrap').css({backgroundPosition: (12 - deltaX *k) + '% ' + (12 - deltaY *k) + '%, ' +  (50 - deltaX *k) + '% ' + (70 - deltaY *k) + '%, ' + (80 - deltaX *k) + '% ' + (10 - deltaY *k) + '%'});
+            $('.second-parallax-wrap').css({backgroundPosition: (8 + deltaX *j) + '% ' + (70 + deltaY *j) + '%, ' +  (21 + deltaX *j) + '% ' + (38 + deltaY *j) + '%, ' + (54 + deltaX *j) + '% ' + (19 + deltaY *j) + '%'});
+            $('.third-parallax-wrap').css({backgroundPosition: (5 + deltaX *n) + '% ' + (90 + deltaY *n) + '%, ' +  (75 + deltaX *n) + '% ' + (75 + deltaY *n) + '%, ' + (90 + deltaX *n) + '% ' + (29 + deltaY *n) + '%'});
+            $('.fourth-parallax-wrap').css({backgroundPosition: (95 - deltaX *n) + '% ' + (90 - deltaY *n) + '%, ' +  (15 - deltaX *n) + '% ' + (5 - deltaY *n) + '%, ' + (85 - deltaX *n) + '% ' + (50 - deltaY *n) + '%'});
+
+        });
+    };
+    moveIcons();
+
+</script>
+<style>
+.promo:before{
+background:#0000
+}
+/*.caption{position:absolute;left:50%;top:45%;width:70%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);color:#fff;text-align:center;z-index:15}*/
+.promo-wrap{position:relative;max-height:100vh;height:100vh;background-image:url("https://picua.org/images/2018/11/05/396d971c78171113c003487a1dba589b.png");overflow:hidden}
+.parallax-wrap{
+  background:url("https://picua.org/images/2018/11/05/4fb4900b8742abfeb78f8476228b7918.png") no-repeat,
+    url("https://picua.org/images/2018/11/05/b4e38e25b1230c29cbcc102a8e07cd48.png") no-repeat,
+  url("https://picua.org/images/2018/11/05/b6b9b255ebdb1c45cf60a6a6472fc400.png") no-repeat;
+  background-position:12% 12%,50% 70%,80% 10%; background-size:10%; position:absolute;top:0;bottom:0;left:0;right:0;z-index:9;opacity:.7}
+
+.second-parallax-wrap{
+  background:
+    url("https://picua.org/images/2018/11/05/f8e8cde627d93d91e9d8ea8900ccf902.png") no-repeat,
+    url("https://picua.org/images/2018/11/05/e4e1361bc5a562e799c19b5bc471e82b.png") no-repeat,
+    url("https://picua.org/images/2018/11/05/9d33aca26da47fd52c294eba63794eef.png") no-repeat;
+ background-size:10%;
+  background-position:8% 70%,21% 38%,54% 19%;position:absolute;top:0;bottom:0;left:0;right:0;z-index:9;opacity:.4}
+.third-parallax-wrap{
+  background:url("https://picua.org/images/2018/11/05/301c95d40f4ddc44b768138d075663b3.png") no-repeat,
+    url("https://picua.org/images/2018/11/05/3c6ff410aab1659188eced1a60fafb52.png") no-repeat,
+    url("https://picua.org/images/2018/11/05/961a29c2daf52734d59dc69aadcc2fbd.png") no-repeat;
+ background-size:10%;
+  background-position:5% 90%,55% 75%,90% 29%;
+  position:absolute;top:0;bottom:0;left:0;right:0;z-index:9;opacity:.7}
+
+.fourth-parallax-wrap{
+  background:
+    url("https://picua.org/images/2018/11/05/1620a721d1b96bf8f248f87d02643a0d.png") no-repeat,
+    url("https://picua.org/images/2018/11/05/3a955dc6fac589d264b0e682873b6770.png") no-repeat;
+  background-position:95% 90%,35% 5%,85% 50%;
+  background-size:20%,30%;
+  position:absolute;top:0;bottom:0;left:0;right:0;z-index:9}
+
+  .caption {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 70%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+    z-index: 15;
+}
+.cap-ds {
+    padding: 0 20px;
+    font-size: 22px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 300;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+  .cap-ttl {
+    padding: 20px 20px 30px;
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+    font-size: 115px;
+    font-weight: 900;
+    line-height: 1em;
+    overflow: visible;
+    margin: 0 0 12px 0;
+    color: #ff501f;
+}
+.cap-ds {
+    padding: 0 20px;
+    font-size: 22px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 300;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+.cap-ds a[role="button"] {
+    background: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 15px 48px;
+    border: 2px solid #fff;
+    transition: all .3s;
+	border: 2px solid #2c7344;
+    color: #2c7344;
+}
+  </style>
+
+</body>
+</html>
